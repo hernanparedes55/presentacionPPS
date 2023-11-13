@@ -4,20 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="presentacionEstilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
         <h1>Presentación de Prácticas Profesionales - Hernán Paredes</h1>
     </header>
-
-    <section id="trabajos">
+    
+    <section id="contenedor-trabajos" class="contenedor-trabajos">
+        
         <div class="trabajo">
-            <img src="imagen1.jpg" alt="Trabajo 1">
-            <h2>Proyecto 1</h2>
-            <p>Descripción del proyecto 1.</p>
-            <a href="proyecto1.html">Ver más</a>
+            <img src="./public/carta.svg" alt="Carta de Presentación">
+            <h2>TP 1</h2>
+            <p>Carta de presentación.</p>
+            <a href="https://docs.google.com/document/d/131Yo0WJWLDBrQDg5jdPSF3UNPdDyEmuR/edit?usp=sharing&ouid=115993859046772793191&rtpof=true&sd=true" target="_blank">Ver más</a>
         </div>
 
         <div class="trabajo">
-            <img src
+            <img src="./public/video.svg" alt="Trabajo 2">
+            <h2>Video</h2>
+            <p>Video de Presentación.</p>
+            <a href="https://drive.google.com/file/d/19xuqVyRE3kWoJHWH8xZuxlth81TsLimC/view?usp=drive_link" target="_blank">Ver más</a>
+        </div>
+
+        <div class="trabajo">
+            <img src="./public/ficha.svg" alt="Trabajo PPS">
+            <h2>Informe Técnico</h2>
+            <p>Pruebas de software en proyecto de migración para la Municipalidad de Río Cuarto.</p>
+            <a href="https://docs.google.com/document/d/1aZmb03MhbBQbZvFXnFdSGXLxrxdDqbdMu8wzW7oCNSI/edit?usp=sharing" target="_blank">Ver más</a>
+        </div>
+
+        <div class="trabajo">
+            <img src="./public/sitio.svg" alt="Trabajo 2">
+            <h2>Portolio web</h2>
+            <p></p>
+            <a href="https://lighthearted-macaron-03a3ee.netlify.app/" target="_blank">Ver más</a>
+        </div>
+
+        <div class="trabajo">
+            <img src="./public/asistencia.svg" alt="Trabajo 2">
+            <h2>Planilla de asistencia</h2>
+            <p></p>
+            <a href="https://drive.google.com/file/d/1UTJ2gIMlDXxgMzMfGoHIWAZdStpKM2Ac/view?usp=sharing" target="_blank">Ver más</a>
+        </div>
+
+        <div class="trabajo">
+            <img src="./public/desempenio.svg" alt="Trabajo 2">
+            <h2>Planilla de Desempeño</h2>
+            <p>Incompleta.</p>
+            <a href="proyecto2.html" >Ver más</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Ingeniería en Software 2023.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido" id="modal-contenido">
+            <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descripcion"></p>
+            <a id="modal-enlace" href="#">Ver más</a>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
+

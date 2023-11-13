@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #58A25D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#contenedor-trabajos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, auto); /* Dos filas */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;   
+    
+}
+
+
+.trabajo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    width: calc(80% - 40px); /* 50% del ancho del contenedor menos el espacio entre las tarjetas */
+    margin-bottom: 10px; 
+    border-radius: 5px;
+}
+
+.trabajo:hover {
+    transform: scale(1.05);
+
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #61f3772f; 
+}
+
+.trabajo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.trabajo h2 {
+    margin-top: 10px;
+    color: #58A25D;
+    font-size: 1.5em;
+}
+
+.trabajo p {
+    color: #555;
+    line-height: 1.4;
+}
+
+.trabajo a {
+    display: block;
+    text-align: center;
+    background-color: #58A25D;
+    color: #fff;
+    padding: 8px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-right: 20px; /* Ajusta el margen derecho para reducir el espacio horizontal */
+    margin-left: 20px;  
+}
+
+.trabajo a:hover {
+    background-color: #449A51;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #58A25D;  /* Cambiado a un tono verde */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#modal-enlace {
+    display: block;
+    background-color: #58A25D;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#modal-enlace:hover {
+    background-color: #449A51;
+}
